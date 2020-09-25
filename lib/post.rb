@@ -8,9 +8,6 @@ class Post
     @@all << self
   end
 
-  def self.all
-    @@all
-  end
 
   def author_name
     if @author == nil
@@ -18,6 +15,10 @@ class Post
     else
       @author.name
     end
+  end
+
+  def self.all
+    @@all
   end
 
 
